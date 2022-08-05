@@ -197,6 +197,27 @@
                 </section>
 
 			</div>
+			
+			<style>
+                .fe-persistent-header {
+                position: relative;
+                z-index: 2;
+                }
+                .print-pdf .fe-persistent-header { display: none; }
+                @media print { .fe-persistent-header { display: none; } }
+
+                .fe-persistent-header a {
+                color: #fff;
+                font-size: medium;
+                float: right;
+                margin: 30px 60px 20px;
+                }
+                .fe-persistent-header a:nth-child(2) { float: left; }
+            </style>
+            <div class="fe-persistent-header">
+            <a href="https://fancyafpresentations.github.io/relv-in-nuce/">https://fancyafpresentations.github.io/relv-in-nuce/</a>
+            </div>
+			
 		</div>
 
 		<script src="dist/reveal.js"></script>
